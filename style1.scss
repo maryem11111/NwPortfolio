@@ -1,0 +1,114 @@
+
+$backcolor : #a84822;
+$burgundy : #800020;
+@mixin fl(){
+    display: flex;
+    justify-content: center;
+}
+
+/*body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#933838;
+    color: #C4AA9F;
+  }*/
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:#9b6262 ;
+    margin: 0;
+    padding: 0;
+    color:#333;
+}
+  
+  .navbar ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 10px;
+    @include fl();
+    background-color: $backcolor; 
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none; 
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .navbar ul li a:hover {
+    color: $burgundy ; 
+  }
+  
+  section {
+    padding: 40px 20px;
+    text-align: center;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 800px;
+  }
+  
+  h1, h2, h3 {
+    color:#C4AA9F;
+  }
+  
+  .profile-photo {
+    border-radius: 10%; 
+    margin-top: 20px;
+  }
+  
+  .about-text {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+  form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  form button {
+    padding: 10px;
+    background-color:$burgundy ;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color:$burgundy  ;
+  }
+  footer {
+    text-align: center;
+    background-color: $backcolor;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+  }
