@@ -10,7 +10,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <style>
-   
+   body{
+    font-family: 'Roboto', sans-serif;
+    background-color:#ECECEC;
+    margin: 0;
+    padding: 0;
+    color:#333;
+}
+h1, h2, h3 {
+    color:#C4AA9F;
+  }
 </style>
     
 </head>
@@ -19,52 +28,109 @@
     <!--Navbar-->
     <nav class="navbar">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#resume">Resume</a></li>
+            <li><a href="#home">Acceuil</a></li>
+            <li><a href="#about">À propos </a></li>
+            <li><a href="#work">Projets</a></li>
+            <li><a href="#resume">Profile</a></li>
             <li><a href="#contact">Contact</a></li>
 
         </ul>
     </nav>
     <!--Home Section-->
     <section id="home">
-        <h1> Welcome to my Website</h1>
+        <h1>Bienvenue sur ma plateforme</h1>
     </section>
 
     <!--About Section-->
     <section id="about">
-        <h2>About Me</h2>
+        <h2>À propos de moi  </h2>
         <div class="about-container">
             <img src="../Ceckpoint HTML/Meee.jpeg" alt="Your Photo" class="profile-photo" width="150" height="165">
             <div class="about-text">
-                <h3><i>Maryem Marzougui</i></h3>
+                <h3><i>Marzougui Maryem</i></h3>
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JuUf1w6YGV0?si=EL_A3kPb9RbCYUBF"
+               <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/JuUf1w6YGV0?si=EL_A3kPb9RbCYUBF"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 
     </section>
-    <!--Work section-->
-    <section id="Work">
-        <h3>My Work</h3>
-
-    </section>
-    <!--Resume section-->
-    <section id="resume">
-        <h3>Resume</h3>
+     <!--Resume section-->
+     <section id="Profile">
+        <h3>Profile</h3>
         <p><i> Jeune diplômée en computer engineering avec une solide formation en développement logiciel, réseaux et
             sécurité informatique. Passionné par les nouvelles
             technologies et motivé par les défis. Mes stages et projets académiques m'ont permis de développer des
             compétences techniques et une capacité à travailler en équipe pour résoudre des problèmes complexes.
             Je cherche à entamer ma carrière dans une entreprise innovante où je pourrais contribuer tout en continuant
             à apprendre et à évoluer</i></p>
-
     </section>
+    <!--compétences-->
+    <section id="competance">
+        <h3>Compétances</h3>
+        <div class="skills-container">
+            <div class="skill">
+                <p><b> langages de programmation :</b></p>
+             <div class="progress">
+            <div class="progress-bar" ; role="progressbar" ; style="width : 40%;" ; aria-valuenow="25" ; aria-valuemin="0" ; aria-valuemax="100">40%</div>
+            </div>
+            <div class="skill">
+                <p><b>  Bases de données :</b></p>
+             <div class="progress">
+            <div class="progress-bar" ; role="progressbar" ; style="width : 55%;background-color: black;" ; aria-valuenow="25" ; aria-valuemin="0" ; aria-valuemax="100">55%</div>
+            </div>
+            <div class="skill">
+                <p><b> Systèmes d'exploitation :</b></p>
+             <div class="progress">
+            <div class="progress-bar" ; role="progressbar" ; style="width : 65%;" ; aria-valuenow="25" ; aria-valuemin="0" ; aria-valuemax="100">65%</div>
+            </div>
+            <div class="skill">
+                <p><b>  Outils de développement :</b></p>
+             <div class="progress">
+            <div class="progress-bar" ; role="progressbar" ; style="width : 70%;" ; aria-valuenow="25" ; aria-valuemin="0" ; aria-valuemax="100">70%</div>
+            </div>
+            <div class="skill">
+                <p><b>  Les cartes électroniques :</b></p>
+             <div class="progress">
+            <div class="progress-bar" ; role="progressbar" ; style="width : 50%;" ; aria-valuenow="25" ; aria-valuemin="0" ; aria-valuemax="100">50%</div>
+            </div>
+        </div>  
+    </section>
+    <!--Work section-->
+    <section id="projets">
+        <h3>Projets académiques</h3>
+         <table border="1" style="width: 100%;border-collapse: collapse;text-align: left;">
+             <thead>
+               <tr style ="background-color:#C4AA9F; color:white;">
+                     <th style="padding: 10px;">Project</th>
+                     <th style="padding: 10px;">Description</th>
+                     <th style="padding: 10px;">thechnologies</th>
+
+               </tr> 
+             </thead>
+             <tbody>
+                <tr>
+                    <td> Mini Projet Mobile "To Do List"</td>
+                    <td> Développement d'une application qui sert à organiser les tâches</td>
+                    <td> Android Studio ,JAVA/XML ,SQL</td>
+                </tr>
+                <tr>
+                    <td> Baguette intelligente pour Aveugle</td>
+                    <td> Conception et developpement d'une baguette intelligente destinee à aider les personnes aveugle dans leur navigation quotidienne</td>
+                    <td> Carte Arduino, Capteur ultrason, Capteur d'obstacles</td>
+                </tr>
+                <tr>
+                    <td>Projet fin d'études</td>
+                    <td> Conception et développement d'une application de suivi d'assiduité des élèves dans un établissement  scolaires par la technologie RFID.</td>
+                    <td>Spring MVC , Bootstrap, MySQL, Carte Raspberry Pi, eclipse</td>
+                </tr>
+             </tbody>
+         </table>
+    </section>
+   
     <!--Contact section-->
     <section id="contact">
-        <h3>Contact Me</h3>
+        <h3>Pour me contacter</h3>
         <form action="#">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required>

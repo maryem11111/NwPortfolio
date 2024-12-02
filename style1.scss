@@ -1,5 +1,5 @@
 
-$backcolor : #a84822;
+$backcolor : #DBC3C8;
 $burgundy : #800020;
 @mixin fl(){
     display: flex;
@@ -13,13 +13,7 @@ $burgundy : #800020;
     background-color:#933838;
     color: #C4AA9F;
   }*/
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color:#9b6262 ;
-    margin: 0;
-    padding: 0;
-    color:#333;
-}
+
   
   .navbar ul {
     list-style-type: none; 
@@ -27,10 +21,11 @@ body{
     padding: 10px;
     @include fl();
     background-color: $backcolor; 
+    flex-wrap: wrap;
   }
   
   .navbar ul li {
-    margin: 0 15px;
+    margin: 10px 15px;
   }
   
   .navbar ul li a {
@@ -52,6 +47,7 @@ body{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     max-width: 800px;
+    width: 90%;
   }
   
   h1, h2, h3 {
@@ -61,6 +57,70 @@ body{
   .profile-photo {
     border-radius: 10%; 
     margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+  #competence{
+    text-align: left;
+    padding: 40px;
+    background-color: #C4AA9F;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.1) ;
+
+  }
+  .skills-container{
+    margin-top: 20px;
+  }
+  .skill{
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  .skill p{
+    margin: 0 0 15px;
+    color:#dba797;
+  }
+  .progress{
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 25px;
+    position: relative;
+  }
+  div.progress-bar{
+    height: 100%;
+    background-color: #0d8000;
+    color:#fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 25px;
+    border-radius: 10px;
+  }
+
+  table{
+    width: 100%;
+    border-collapse: collapse;
+    margin:20px 0;
+    font-size: 16px;
+    text-align: left;
+  }
+  th,td {
+    border: 1px solid #ddd;
+    padding:12px;
+  }
+  th{
+    background-color:#C4AA9F ;
+    color: white;
+    text-transform: uppercase;
+  }
+  tr:nth-child(even){
+    background-color: #f9f9f9;
+  }
+  tr:hover{
+    background-color:#f1f1f1;
   }
   
   .about-text {
@@ -72,7 +132,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 400px;
+    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -86,7 +146,9 @@ body{
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 14px;
+    width : 100%;
   }
+
   
   form button {
     padding: 10px;
@@ -100,7 +162,7 @@ body{
   }
   
   form button:hover {
-    background-color:$burgundy  ;
+    background-color:darken($burgundy ,10%) ;
   }
   footer {
     text-align: center;
@@ -111,4 +173,43 @@ body{
     bottom: 0;
     width: 100%;
     font-size: 14px;
+  }
+  @media (max-width:768px){
+    .navbar ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar ul li{
+        flex-direction:column;
+        align-items: center;
+    }
+    h1,h2,h3{
+        font-size: 1.5rem;
+    }
+    section{
+        padding: 20px 10px;
+    }
+    form button{
+        font-size: 14px;
+        padding: 8px;
+    }
+  }
+  @media(max-width:480px){
+    body{
+        font-size:14px;
+    }
+    .navbar ul{
+        padding:5px;
+    }
+    table th, table td{
+        font-size: 12px;
+        padding: 8px;
+    }
+    form input, form textarea{
+        font-size: 12px;
+    }
+    form button{
+        font-size: 12px;
+        padding: 6px;
+    }
   }
