@@ -11,7 +11,7 @@
   padding: 10px;
   display: flex;
   justify-content: center;
-  background-color: #DBC3C8;
+  background-color: #dcae96;
   flex-wrap: wrap;
 }
 
@@ -86,7 +86,7 @@ h1, h2, h3 {
 
 div.progress-bar {
   height: 100%;
-  background-color: #0d8000;
+  background-color: #dcae96;
   color: #fff;
   font-size: 14px;
   font-weight: bold;
@@ -167,7 +167,7 @@ form button:hover {
 
 footer {
   text-align: center;
-  background-color: #DBC3C8;
+  background-color: #dcae96;
   color: white;
   padding: 10px 0;
   position: relative;

@@ -1,5 +1,5 @@
 
-$backcolor : #DBC3C8;
+$backcolor : #dcae96;
 $burgundy : #800020;
 @mixin fl(){
     display: flex;
@@ -90,7 +90,7 @@ $burgundy : #800020;
   }
   div.progress-bar{
     height: 100%;
-    background-color: #0d8000;
+    background-color: $backcolor;
     color:#fff;
     font-size: 14px;
     font-weight: bold;
